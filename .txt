@@ -1,3 +1,0 @@
-"username": "Superuser",
-    "name": "Marcelo",
-		"password": "1234"
