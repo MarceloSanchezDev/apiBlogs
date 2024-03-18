@@ -12,7 +12,6 @@ export const getAll = () => {
   return request.then(response => response.data)
 }
 
-
 export const createBlog = async (blog) => {
 
   const response = await fetch(baseUrl, {
@@ -26,3 +25,38 @@ export const createBlog = async (blog) => {
     return await response.json()
   
 }
+
+export const likedBlog = async (blog, id) => {
+  const url = `${baseUrl}${id}`; 
+  const response = await fetch(url, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': token
+    },
+    body: JSON.stringify(blog)
+  });
+
+  if (!response.ok) {
+    throw new Error('Failed to like blog');
+  }
+
+  return await response.json();
+};
+
+export const deleteBlog = async (id) => {
+  const url = `${baseUrl}${id}`; 
+  const response = await fetch(url, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': token
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error('Failed to DELETE blog');
+  }
+
+  return await response.json();
+};

@@ -1,0 +1,5 @@
+"username": "Superuser",
+    "name": "Marcelo",
+		"password": "1234"
+
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlN1cGVydXNlciIsImlkIjoiNjVlZjM1ZTdiZTRhZTJlOTg3ZjcwNjJjIiwiaWF0IjoxNzEwMjczNjE3LCJleHAiOjE3MTAyNzcyMTd9.Ae9OkcrWJ8nBopsZy6gUNPkWTzA0ouLCb2Yq0RwNrAw"
